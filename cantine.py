@@ -101,9 +101,9 @@ for jsondata in data['json']:
           json = "En entrée : "+entree+", pour le plat, "+plat+" accompagné de "+garniture+". Pour le fromage / laitage, "+fromage+" et enfin, en dessert, "+dessert+". Et pour le goûter, "+gouter+"."
           json='{"retour":"'+json+'"}'
           INDEX=json
-          #print json
+          print json
     except:
-      	#print('Pas de menu disponible')
+      	print('Pas de menu disponible')
 
 
 #INDEX = """<!DOCTYPE html>
@@ -119,8 +119,8 @@ for jsondata in data['json']:
 #<p>Source code: <a href="https://github.com/simonw/json-head">github.com/simonw/json-head</a></p>
 #"""
 
-callback_re = re.compile(r'^[a-zA-Z_](\.?[a-zA-Z0-9_]+)+$')
-is_valid_callback = callback_re.match
+#callback_re = re.compile(r'^[a-zA-Z_](\.?[a-zA-Z0-9_]+)+$')
+#is_valid_callback = callback_re.match
 
 
 async def head(session, url):
